@@ -1,0 +1,25 @@
+# Simple FAQ Chatbot without libraries
+
+print("Welcome to FAQ Chatbot! Type 'exit' to quit.\n")
+
+while True:
+    user_q = input("You: ").lower()
+
+    if user_q == "exit":
+        print("Chatbot: Goodbye!")
+        break
+
+    elif "python" in user_q:
+        print("Chatbot: Python is a popular programming language.")
+
+    elif "creator" in user_q or "who made python" in user_q:
+        print("Chatbot: Python was created by Guido van Rossum.")
+
+    elif "ai" in user_q or "artificial intelligence" in user_q:
+        print("Chatbot: AI means Artificial Intelligence, making machines intelligent.")
+
+    elif "machine learning" in user_q or "ml" in user_q:
+        print("Chatbot: Machine Learning is teaching computers to learn from data.")
+
+    else:
+        print("Chatbot: Sorry, I don’t know the answer to that.")
